@@ -1,0 +1,26 @@
+{
+  "extends": ["airbnb-base"],
+  "env": {
+    "commonjs": true,
+    "node": true    
+  },
+  "plugins": ["import"],
+  "rules": {
+    "camelcase": [0, {"properties": "never"}],
+    "implicit-arrow-linebreak": 0,
+    "linebreak-style": 0,
+    "no-await-in-loop": 0,
+    "no-console": 2,
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "no-restricted-syntax": [
+      "error",
+      "ForInStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "no-underscore-dangle": 0,
+    "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+    "semi": [2, "never"],
+    "import/no-extraneous-dependencies": ["error", {"bundledDependencies": false}]
+  }
+}
